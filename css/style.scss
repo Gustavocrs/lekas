@@ -1,0 +1,306 @@
+//VARIÁVEIS SASS
+//cores gradiente 
+$primeiracor: white;
+$segundacor: lightgray;
+
+//MIXINS SACSS
+@mixin botaopadrao{
+  background: #124E7E; 
+	padding: 10px; 
+	cursor: pointer; 
+	color: #fff; 
+	border: none; 
+	font: 14px "Open Sans", sans-serif;
+	border-radius: 2px;
+}
+
+@mixin botaoativo{
+  background: #0c8de2; 
+	padding: 10px; 
+  cursor: pointer; 
+	color: #fff; 
+	border: none; 
+	font: 14px "Open Sans", sans-serif;
+	border-radius: 2px;
+}
+
+@mixin form{
+  padding: 5px; 
+	color: #000; 
+	font: 14px "Open Sans", sans-serif;
+	text-transform: uppercase;
+	border: solid 1px #cfcfcf;
+}
+
+@mixin labelform{
+  border: none; 
+	font: 14px "Open Sans", sans-serif;
+	font-weight: bold;
+}
+/*CONFIGURAÇÕES GERAIS - TODAS AS PÁGINAS*/
+
+a{
+	font: 14px "Open Sans", sans-serif;
+	color: #004d81; 
+}
+
+.button {
+@include botaopadrao;
+}
+
+.formlabel1 {
+	width:470px;
+  @include form;
+}
+
+.formlabel2{
+	width:322px;
+  @include form;
+}
+
+.formlabel3 {
+	width: 120px;
+  @include form;
+}
+
+.textolabel {
+	@include labelform;
+}
+
+/*CONFIGURAÇÕES INDEX*/
+
+.formlogin{
+	margin: 15px;
+	width: 150px;
+	padding: 20px; 
+	color: #000; 
+	font: 14px "Open Sans", sans-serif;
+	border: solid 1px #cfcfcf;
+	text-align: center;
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: top;
+	vertical-align: top;
+}
+
+.containerlogin{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.quadro{
+	padding: 10px;
+	width: 300px;
+	height: 500px;
+	background-image:linear-gradient($primeiracor,$segundacor);
+	border-radius: 15px;
+	margin-top: 10px;
+  vertical-align: top;
+}
+
+.link{
+	padding-bottom: 1em;
+}
+
+.inicio-index{
+	text-align: center;
+	padding-bottom: 3em; 
+}
+
+.meio-index{
+	text-align: center;
+	padding-bottom: 2em;  
+}
+
+.fim-index{
+	text-align: center;	
+	margin: auto auto;
+}
+
+.buttonlogin{
+	@include botaopadrao;
+	width: 150px;
+	margin-top: 6px;
+}
+
+.titulos{
+	font: 20px "Open Sans", sans-serif;
+}
+
+/*CONFIGURAÇÕES CADASTRO*/
+
+.inicio-cadastro {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	border: solid;
+}
+
+.fisjur{
+	text-align: center;
+}
+
+.meio-cadastro{
+	margin: 0 50% 0 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.fim-cadastro{
+	padding-top: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+h1{
+	font: 35px "Open Sans", sans-serif;
+	clear: left;
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+
+li p{
+	margin: 5px;
+}
+
+ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+.esconde{
+	display: none;	
+}
+
+#erro{
+	color: red;
+	font: 14px "Open Sans", sans-serif;
+}
+
+.bt-tipocliente{
+	@include botaopadrao;
+  width: 120px;
+	margin-top: 6px;
+	margin-bottom: 15px;
+}
+
+.bt-tipocliente-ativo{
+	@include botaoativo;
+  width: 120px;
+	margin-top: 6px;
+	margin-bottom: 15px;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 480px){
+	
+	a{
+		font: 16px "Open Sans", sans-serif;
+		color: #004d81; 
+	}
+
+	.titulos{
+		font: 30px "Open Sans", sans-serif;
+	}
+	
+	.formlogin{
+		margin-top: 5px;
+		height: 100%;
+		width: 150px;
+		padding: 20px; 
+		color: #000; 
+		font: 18px "Open Sans", sans-serif;
+		border: solid 1px #cfcfcf;
+		text-align: center;
+	}
+
+	.buttonlogin{
+		background: #124E7E; 
+		cursor: pointer; 
+		color: #fff; 
+		border: none; 
+		font: 18px "Open Sans", sans-serif;
+		border-radius: 2px;
+		width: 150px;
+		padding: 20px; 
+		margin-top: 15px;
+	}
+	
+	.container{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center
+	}
+	.quadro{
+		width: 100%;
+		height: 800px;
+		margin-top: 20px;
+		padding: 10px;
+		background-image:linear-gradient(white,lightgray);
+		border-radius: 15px;
+	}
+
+	ul li{
+		display: list-item;
+	}
+
+	div .fisjur{
+		padding: 0 0 20px;
+	}
+
+	h1{
+		font: 25px "Open Sans", sans-serif;
+		clear: left;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	.formlabel1 {
+		width:96%;
+		margin: auto;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
+	
+	.formlabel2{
+		width:96%;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
+	
+	.formlabel3 {
+		width: 96%;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
+	
+	.textolabel {
+		border: none; 
+		font: 14px "Open Sans", sans-serif;
+		font-weight: bold;
+	}
+
+}
