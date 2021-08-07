@@ -3,6 +3,10 @@
 a {
   font: 14px "Open Sans", sans-serif;
   color: #004d81; }
+  @media (max-width: 980px) {
+    a {
+      font: 16px "Open Sans", sans-serif;
+      color: #004d81; } }
 
 .button {
   background: #124E7E;
@@ -20,6 +24,15 @@ a {
   font: 14px "Open Sans", sans-serif;
   text-transform: uppercase;
   border: solid 1px #cfcfcf; }
+  @media (max-width: 980px) {
+    .formlabel1 {
+      width: 96%;
+      margin: auto;
+      padding: 5px;
+      color: #000;
+      font: 14px "Open Sans", sans-serif;
+      text-transform: uppercase;
+      border: solid 1px #cfcfcf; } }
 
 .formlabel2 {
   width: 322px;
@@ -28,6 +41,14 @@ a {
   font: 14px "Open Sans", sans-serif;
   text-transform: uppercase;
   border: solid 1px #cfcfcf; }
+  @media (max-width: 980px) {
+    .formlabel2 {
+      width: 96%;
+      padding: 5px;
+      color: #000;
+      font: 14px "Open Sans", sans-serif;
+      text-transform: uppercase;
+      border: solid 1px #cfcfcf; } }
 
 .formlabel3 {
   width: 120px;
@@ -36,11 +57,24 @@ a {
   font: 14px "Open Sans", sans-serif;
   text-transform: uppercase;
   border: solid 1px #cfcfcf; }
+  @media (max-width: 980px) {
+    .formlabel3 {
+      width: 96%;
+      padding: 5px;
+      color: #000;
+      font: 14px "Open Sans", sans-serif;
+      text-transform: uppercase;
+      border: solid 1px #cfcfcf; } }
 
 .textolabel {
   border: none;
   font: 14px "Open Sans", sans-serif;
   font-weight: bold; }
+  @media (max-width: 980px) {
+    .textolabel {
+      border: none;
+      font: 14px "Open Sans", sans-serif;
+      font-weight: bold; } }
 
 /*CONFIGURAÇÕES INDEX*/
 .formlogin {
@@ -51,6 +85,16 @@ a {
   font: 14px "Open Sans", sans-serif;
   border: solid 1px #cfcfcf;
   text-align: center; }
+  @media (max-width: 980px) {
+    .formlogin {
+      margin-top: 5px;
+      height: 100%;
+      width: 150px;
+      padding: 20px;
+      color: #000;
+      font: 18px "Open Sans", sans-serif;
+      border: solid 1px #cfcfcf;
+      text-align: center; } }
 
 .container {
   width: 100vw;
@@ -60,6 +104,14 @@ a {
   justify-content: center;
   align-items: top;
   vertical-align: top; }
+  @media (max-width: 980px) {
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; } }
 
 .containerlogin {
   width: 100vw;
@@ -77,6 +129,14 @@ a {
   border-radius: 15px;
   margin-top: 10px;
   vertical-align: top; }
+  @media (max-width: 980px) {
+    .quadro {
+      width: 100%;
+      height: 800px;
+      margin-top: 20px;
+      padding: 10px;
+      background-image: linear-gradient(white, lightgray);
+      border-radius: 15px; } }
 
 .link {
   padding-bottom: 1em; }
@@ -103,9 +163,23 @@ a {
   border-radius: 2px;
   width: 150px;
   margin-top: 6px; }
+  @media (max-width: 980px) {
+    .buttonlogin {
+      background: #124E7E;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+      font: 18px "Open Sans", sans-serif;
+      border-radius: 2px;
+      width: 150px;
+      padding: 20px;
+      margin-top: 15px; } }
 
 .titulos {
   font: 20px "Open Sans", sans-serif; }
+  @media (max-width: 980px) {
+    .titulos {
+      font: 30px "Open Sans", sans-serif; } }
 
 /*CONFIGURAÇÕES CADASTRO*/
 .inicio-cadastro {
@@ -117,6 +191,9 @@ a {
 .fisjur {
   text-align: center; }
 
+@media (max-width: 980px) {
+  div .fisjur {
+    padding: 0 0 20px; } }
 .meio-cadastro {
   margin: 0 50% 0 50%;
   width: 100%;
@@ -133,6 +210,12 @@ h1 {
   text-align: center;
   padding: 20px 0;
   text-transform: uppercase; }
+  @media (max-width: 980px) {
+    h1 {
+      font: 25px "Open Sans", sans-serif;
+      clear: left;
+      text-align: center;
+      padding: 10px 0; } }
 
 li p {
   margin: 5px; }
@@ -140,6 +223,9 @@ li p {
 ul li {
   display: inline-block;
   list-style: none; }
+  @media (max-width: 980px) {
+    ul li {
+      display: list-item; } }
 
 .esconde {
   display: none; }
@@ -171,93 +257,5 @@ ul li {
   width: 120px;
   margin-top: 6px;
   margin-bottom: 15px; }
-
-/*RESPONSIVIDADE*/
-@media screen and (max-width: 480px) {
-  a {
-    font: 16px "Open Sans", sans-serif;
-    color: #004d81; }
-
-  .titulos {
-    font: 30px "Open Sans", sans-serif; }
-
-  .formlogin {
-    margin-top: 5px;
-    height: 100%;
-    width: 150px;
-    padding: 20px;
-    color: #000;
-    font: 18px "Open Sans", sans-serif;
-    border: solid 1px #cfcfcf;
-    text-align: center; }
-
-  .buttonlogin {
-    background: #124E7E;
-    cursor: pointer;
-    color: #fff;
-    border: none;
-    font: 18px "Open Sans", sans-serif;
-    border-radius: 2px;
-    width: 150px;
-    padding: 20px;
-    margin-top: 15px; }
-
-  .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-
-  .quadro {
-    width: 100%;
-    height: 800px;
-    margin-top: 20px;
-    padding: 10px;
-    background-image: linear-gradient(white, lightgray);
-    border-radius: 15px; }
-
-  ul li {
-    display: list-item; }
-
-  div .fisjur {
-    padding: 0 0 20px; }
-
-  h1 {
-    font: 25px "Open Sans", sans-serif;
-    clear: left;
-    text-align: center;
-    padding: 10px 0; }
-
-  .formlabel1 {
-    width: 96%;
-    margin: auto;
-    padding: 5px;
-    color: #000;
-    font: 14px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    border: solid 1px #cfcfcf; }
-
-  .formlabel2 {
-    width: 96%;
-    padding: 5px;
-    color: #000;
-    font: 14px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    border: solid 1px #cfcfcf; }
-
-  .formlabel3 {
-    width: 96%;
-    padding: 5px;
-    color: #000;
-    font: 14px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    border: solid 1px #cfcfcf; }
-
-  .textolabel {
-    border: none;
-    font: 14px "Open Sans", sans-serif;
-    font-weight: bold; } }
 
 /*# sourceMappingURL=style.css.map */

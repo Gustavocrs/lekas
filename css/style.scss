@@ -3,6 +3,9 @@
 $primeiracor: white;
 $segundacor: lightgray;
 
+//Variáveis Media Queries
+$mqmobile: "(max-width:980px)";
+
 //MIXINS SACSS
 @mixin botaopadrao{
   background: #124E7E; 
@@ -37,11 +40,16 @@ $segundacor: lightgray;
 	font: 14px "Open Sans", sans-serif;
 	font-weight: bold;
 }
+
 /*CONFIGURAÇÕES GERAIS - TODAS AS PÁGINAS*/
 
 a{
 	font: 14px "Open Sans", sans-serif;
-	color: #004d81; 
+	color: #004d81;
+		@media #{$mqmobile}{
+			font: 16px "Open Sans", sans-serif;
+			color: #004d81;
+		}
 }
 
 .button {
@@ -51,20 +59,50 @@ a{
 .formlabel1 {
 	width:470px;
   @include form;
+	@media #{$mqmobile}{
+		width:96%;
+		margin: auto;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
 }
 
 .formlabel2{
 	width:322px;
   @include form;
+	@media #{$mqmobile}{
+		width:96%;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
 }
 
 .formlabel3 {
 	width: 120px;
   @include form;
+	@media #{$mqmobile}{
+		width: 96%;
+		padding: 5px; 
+		color: #000; 
+		font: 14px "Open Sans", sans-serif;
+		text-transform: uppercase;
+		border: solid 1px #cfcfcf;
+	}
 }
 
 .textolabel {
 	@include labelform;
+	@media #{$mqmobile}{
+		border: none; 
+		font: 14px "Open Sans", sans-serif;
+		font-weight: bold;
+	}
 }
 
 /*CONFIGURAÇÕES INDEX*/
@@ -77,6 +115,16 @@ a{
 	font: 14px "Open Sans", sans-serif;
 	border: solid 1px #cfcfcf;
 	text-align: center;
+		@media #{$mqmobile}{
+		margin-top: 5px;
+		height: 100%;
+		width: 150px;
+		padding: 20px; 
+		color: #000; 
+		font: 18px "Open Sans", sans-serif;
+		border: solid 1px #cfcfcf;
+		text-align: center;
+		}
 }
 
 .container{
@@ -87,6 +135,14 @@ a{
 	justify-content: center;
 	align-items: top;
 	vertical-align: top;
+	@media #{$mqmobile}{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .containerlogin{
@@ -106,6 +162,14 @@ a{
 	border-radius: 15px;
 	margin-top: 10px;
   vertical-align: top;
+	@media #{$mqmobile}{
+		width: 100%;
+		height: 800px;
+		margin-top: 20px;
+		padding: 10px;
+		background-image:linear-gradient(white,lightgray);
+		border-radius: 15px;
+	}
 }
 
 .link{
@@ -131,10 +195,24 @@ a{
 	@include botaopadrao;
 	width: 150px;
 	margin-top: 6px;
+	@media #{$mqmobile}{
+		background: #124E7E; 
+		cursor: pointer; 
+		color: #fff; 
+		border: none; 
+		font: 18px "Open Sans", sans-serif;
+		border-radius: 2px;
+		width: 150px;
+		padding: 20px; 
+		margin-top: 15px;
+	}
 }
 
 .titulos{
 	font: 20px "Open Sans", sans-serif;
+	@media #{$mqmobile}{
+		font: 30px "Open Sans", sans-serif;
+	}
 }
 
 /*CONFIGURAÇÕES CADASTRO*/
@@ -148,6 +226,11 @@ a{
 
 .fisjur{
 	text-align: center;
+}
+@media #{$mqmobile}{
+	div .fisjur{
+		padding: 0 0 20px;
+	}
 }
 
 .meio-cadastro{
@@ -168,6 +251,12 @@ h1{
 	text-align: center;
 	padding: 20px 0;
 	text-transform: uppercase;
+	@media #{$mqmobile}{
+		font: 25px "Open Sans", sans-serif;
+		clear: left;
+		text-align: center;
+		padding: 10px 0;
+	}
 }
 
 li p{
@@ -177,6 +266,9 @@ li p{
 ul li{
 	display: inline-block;
 	list-style: none;
+	@media #{$mqmobile}{
+		display: list-item;
+	}
 }
 
 .esconde{
@@ -200,107 +292,4 @@ ul li{
   width: 120px;
 	margin-top: 6px;
 	margin-bottom: 15px;
-}
-
-/*RESPONSIVIDADE*/
-@media screen and (max-width: 480px){
-	
-	a{
-		font: 16px "Open Sans", sans-serif;
-		color: #004d81; 
-	}
-
-	.titulos{
-		font: 30px "Open Sans", sans-serif;
-	}
-	
-	.formlogin{
-		margin-top: 5px;
-		height: 100%;
-		width: 150px;
-		padding: 20px; 
-		color: #000; 
-		font: 18px "Open Sans", sans-serif;
-		border: solid 1px #cfcfcf;
-		text-align: center;
-	}
-
-	.buttonlogin{
-		background: #124E7E; 
-		cursor: pointer; 
-		color: #fff; 
-		border: none; 
-		font: 18px "Open Sans", sans-serif;
-		border-radius: 2px;
-		width: 150px;
-		padding: 20px; 
-		margin-top: 15px;
-	}
-	
-	.container{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center
-	}
-	.quadro{
-		width: 100%;
-		height: 800px;
-		margin-top: 20px;
-		padding: 10px;
-		background-image:linear-gradient(white,lightgray);
-		border-radius: 15px;
-	}
-
-	ul li{
-		display: list-item;
-	}
-
-	div .fisjur{
-		padding: 0 0 20px;
-	}
-
-	h1{
-		font: 25px "Open Sans", sans-serif;
-		clear: left;
-		text-align: center;
-		padding: 10px 0;
-	}
-
-	.formlabel1 {
-		width:96%;
-		margin: auto;
-		padding: 5px; 
-		color: #000; 
-		font: 14px "Open Sans", sans-serif;
-		text-transform: uppercase;
-		border: solid 1px #cfcfcf;
-	}
-	
-	.formlabel2{
-		width:96%;
-		padding: 5px; 
-		color: #000; 
-		font: 14px "Open Sans", sans-serif;
-		text-transform: uppercase;
-		border: solid 1px #cfcfcf;
-	}
-	
-	.formlabel3 {
-		width: 96%;
-		padding: 5px; 
-		color: #000; 
-		font: 14px "Open Sans", sans-serif;
-		text-transform: uppercase;
-		border: solid 1px #cfcfcf;
-	}
-	
-	.textolabel {
-		border: none; 
-		font: 14px "Open Sans", sans-serif;
-		font-weight: bold;
-	}
-
 }

@@ -1,5 +1,5 @@
-var number = document.querySelector("#cpf");
-    number.addEventListener("onBlur", function isValidCPF(number) {
+var number = document.getElementById("cpf");
+    number.addEventListener("onblur", function isValidCPF(number) {
     var sum;
     var rest;
     sum = 0;
