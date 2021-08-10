@@ -9,7 +9,7 @@ $mqmobile: "(max-width:980px)";
 //MIXINS SACSS
 @mixin botaopadrao{
   background: #124E7E; 
-	padding: 10px; 
+	padding: 10px;
 	cursor: pointer; 
 	color: #fff; 
 	border: none; 
@@ -292,4 +292,46 @@ ul li{
   width: 120px;
 	margin-top: 6px;
 	margin-bottom: 15px;
+}
+
+#insertField {
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#insertField input {
+  background-color: #f0f0f5;
+
+  border-radius: 8px;
+  border: 0;
+
+  margin-left: 40px;
+  padding: 3px 9px;
+
+  font-size: 16px;
+  color: #6c6c80;
+
+  width: 120px;
+}
+#res {
+  width: 580px;
+  height: 110px;
+  background-color: var(--primary-color);
+
+  margin: auto;
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  transition: 400ms;
 }

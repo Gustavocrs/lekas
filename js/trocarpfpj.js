@@ -1,15 +1,15 @@
 var tipoCliente = document.querySelector(".fisjur");
 
 var trocaPj = document.querySelector("#bt-pj");
-var nomePj = document.querySelector("#nome-empresa");
-var cnpj = document.querySelector("#cnpj");
-var inscricao = document.querySelector("#inscricao");
+var nomePj = document.querySelector("#labelnome-empresa");
+var cnpj = document.querySelector("#labelcnpj");
+var inscricao = document.querySelector("#labelinscricao");
 
 
 var trocaPf = document.querySelector("#bt-pf");
-var nomePf = document.querySelector("#nome-cliente");
-var cpf = document.querySelector("#cpf");
-var rg = document.querySelector("#rg-cliente")
+var nomePf = document.querySelector("#labelnome-cliente");
+var cpf = document.querySelector("#labelcpf");
+var rg = document.querySelector("#labelrg-cliente")
 
 nomePf.classList.add("esconde");  
 cpf.classList.add("esconde");
