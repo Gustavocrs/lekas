@@ -148,7 +148,7 @@ a {
   padding: 10px;
   width: 300px;
   height: 500px;
-  background-image: linear-gradient(white, lightgray);
+  background-image: linear-gradient(#ffffff, #d3d3d3);
   border-radius: 15px;
   margin-top: 10px;
   vertical-align: top;
@@ -159,7 +159,7 @@ a {
     height: 800px;
     margin-top: 20px;
     padding: 10px;
-    background-image: linear-gradient(white, lightgray);
+    background-image: linear-gradient(#ffffff, #d3d3d3);
     border-radius: 15px;
   }
 }

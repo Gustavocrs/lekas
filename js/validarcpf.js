@@ -49,14 +49,15 @@ function validar() {
       newCpf = newCpf.join('')
   
       if (cpf === newCpf) {
-        console.log("O CPF é VÁLIDO.")
-        var corValida = document.querySelector("#cpf");
-        console.log(corValida);
-        
+        console.log("O CPF VÁLIDO.")        
       } else {
-        console.log("O CPF é INVÁLIDO.");
-      }
+        console.log("O CPF INVÁLIDO.");
+        document.querySelector("#cpf").value="";
+        document.querySelector("#cpf").focus();
+        }
       } else {
         console.log("Informe o CPF corretamente.");
+        document.querySelector("#cpf").value="";
+        document.querySelector("#cpf").focus();
     }
   }
