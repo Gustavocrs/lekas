@@ -1,4 +1,4 @@
-<h1> NOME_DO_PROJETO </h1>
+<h1> Login / Cadastro </h1>
 
 <img src="https://img.shields.io/badge/STATUS%20-Pronto-sucess"/>
 
